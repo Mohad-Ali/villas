@@ -7,7 +7,7 @@ export default function Contact() {
     <section className="w-full bg-black text-white py-10 md:py-16 px-4 md:px-20">
 
       {/* -------- TOP HEADING + PARAGRAPH (RIGHT SIDE) -------- */}
-      <div className="max-w-8xl mx-auto mb-20 text-center lg:text-right">
+      <div className="max-w-8xl mx-auto mb-10 md:mb-20 text-center lg:text-right">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Where Tranquility Meets Timeless Luxury
         </h2>
@@ -48,7 +48,7 @@ export default function Contact() {
   
 
   {/* Details BELOW BOTH columns */}
-  <div className="text-gray-300 text-lg leading-relaxed mt-10 text-center">
+  <div className="text-gray-300 text-lg leading-relaxed mt-0 md:mt-10 text-center">
     <p>
       Exclusive Private Entrance | Double-Height Living Lounge <br />
      Sunlit Courtyard & Landscaped Deck <br />
@@ -66,7 +66,7 @@ export default function Contact() {
    
 
     {/* RIGHT: Small Image */}
-    <div className="relative w-fit mx-auto mt-4 md:mt-20 md:mx-0">
+    <div className="relative w-fit mx-auto mt-10 md:mt-20 md:mx-0">
 
       {/* Frame top-right */}
       <div className="absolute -top-4 -right-4 w-20 h-1 bg-[#8BB6B1]" />
@@ -88,19 +88,19 @@ export default function Contact() {
 
       <div className="flex items-center justify-center gap-3 text-gray-300">
         <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-        <span className="text-lg">ECR / OMR, Chennai</span>
+        <span className="text-lg">Yelagiri, Chennai</span>
       </div>
-
+{/* 
       <div className="flex items-center justify-center gap-3 text-gray-300">
         <IndianRupee className="w-6 h-6 text-[#8BB6B1]" />
         <span className="text-lg">12 Cr. Onwards</span>
-      </div>
+      </div> */}
 
-        <div className="text-center mt-10">
+        {/* <div className="text-center mt-10">
         <Link to={"/contact"} className="bg-[#8BB6B1] text-black text-xl font-semibold px-10 py-3 rounded-xl hover:opacity-80 transition">
           Contact Us
         </Link>
-      </div>
+      </div> */}
 
     </div>
 

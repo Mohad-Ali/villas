@@ -5,16 +5,25 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 pt-16 pb-10 px-6 md:px-16">
 
+      {/* Top Divider */}
+      {/* <div className="w-full border-t border-gray-600 my-10"></div> */}
+
       {/* --- TOP SECTION --- */}
       <div className="flex flex-col md:flex-row justify-around gap-12 md:gap-20">
 
-        {/* LOGO */}
-        <div className="flex items-center gap-3">
-          <img 
-            src="/logo.png" 
-            alt="Classy Villas Logo" 
-            className="w-36 h-30 rounded-full"
+        {/* LOGO + CONTACT INFO */}
+        <div className="flex flex-col items-start gap-4">
+          <img
+            src="/logo.png"
+            alt="Classy Villas Logo"
+            className="w-26 h-20 rounded-full"
           />
+
+          {/* Contact Info */}
+          <div className="text-gray-400 text-sm space-y-1">
+            <p>Email: <span className="text-white">example@gmail.com</span></p>
+            <p>Contact: <span className="text-white">+91 9840942784</span></p>
+          </div>
         </div>
 
         {/* LINKS SECTION */}
@@ -30,33 +39,20 @@ export default function Footer() {
             <Link to={"/term"} className="cursor-pointer hover:text-white transition">Terms & Conditions</Link>
             <Link to={"/guest"} className="cursor-pointer hover:text-white transition">Guest Policies</Link>
             <Link to={"/privacy"} className="cursor-pointer hover:text-white transition">Privacy Policies</Link>
-            <Link to={"/trust"} className="cursor-pointer hover:text-white transition">Trust and safety</Link>
+            <Link to={"/trust"} className="cursor-pointer hover:text-white transition">Trust and Safety</Link>
           </div>
 
         </div>
 
       </div>
 
-      {/* --- DIVIDER --- */}
+      {/* Bottom Divider */}
       <div className="w-full border-t border-gray-600 my-10"></div>
 
-      {/* --- SOCIAL + COPYRIGHT --- */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+    <p className="text-gray-400 text-sm text-center">
+  {new Date().getFullYear()} © Classyvillas.com
+</p>
 
-        {/* Social Icons */}
-        <div className="flex gap-6 text-xl">
-          <FaFacebookF className="cursor-pointer hover:text-white" />
-          <FaInstagram className="cursor-pointer hover:text-white" />
-          <FaTwitter className="cursor-pointer hover:text-white" />
-          <FaPlay className="cursor-pointer hover:text-white" />
-        </div>
-
-        {/* Copyright */}
-        <p className="text-gray-400 text-sm text-center md:text-right">
-          2013-2022 © Classyvillas.com
-        </p>
-
-      </div>
     </footer>
   );
 }

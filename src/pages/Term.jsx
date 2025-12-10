@@ -34,6 +34,14 @@ export default function Term() {
             <li>Refunds, if applicable, will be processed according to the cancellation terms.</li>
           </ul>
         </div>
+        <div className="space-y-3">
+          <h2 className="text-xl md:text-2xl font-semibold">3 Advance Booking:</h2>
+
+          <ul className="list-disc list-inside space-y-2 text-gray-300">
+            <li>Rs 10,000 will be charged at the time of bookings</li>
+            <li>you can pay us at Google Pay or Account Number</li>
+          </ul>
+        </div>
 
         {/* SECTION 3 */}
         <div className="space-y-3">
@@ -44,7 +52,34 @@ export default function Term() {
            Guests are responsible for any damage caused to the property during their stay.
             </li>
             <li>
-        Pets, parties, or events may only be allowed with prior written permission.
+        parties, or events may only be allowed with prior written permission.
+            </li>
+            <li>
+        Bachelor’s not allowed 
+            </li>
+            <li>
+        Only Couple and Family allowed.
+            </li>
+            <li>
+        Passport, Aadhar card, Driving license and Gov I’d are accepted as id proof.
+            </li>
+            <li>
+         Smoking, drinking and consumption of Pork is STRICTLY PROHIBITED.
+            </li>
+            <li>
+        Pet are not allowed / Parties and events are not allowed.
+            </li>
+            <li>
+       Veg and Non veg is allowed (Pork is not allowed)
+            </li>
+            <li>
+       Private kitchen is available for cooking.
+            </li>
+            <li>
+      Spacious Room with attached Bathroom with Bath Tub.
+            </li>
+            <li>
+     Check in 10.00 am to 2.00 pm.
             </li>
           </ul>
         </div>

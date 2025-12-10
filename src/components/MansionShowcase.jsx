@@ -7,7 +7,7 @@ export default function MansionShowcase() {
     <section className="w-full bg-black text-white py-16 px-4 md:px-20">
 
       {/* -------- TOP HEADING + PARAGRAPH (RIGHT SIDE) -------- */}
-      <div className="max-w-8xl mx-auto mb-20 text-center lg:text-right">
+      <div className="max-w-8xl mx-auto mb-10 md:mb-20 text-center lg:text-right">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Where Architectural Grace Meets Serene Living
         </h2>
@@ -54,15 +54,19 @@ export default function MansionShowcase() {
     {/* LEFT: Location + Price */}
     <div className="space-y-6 text-center mt-0 md:mt-30">
 
-      <div className="flex items-center gap-3 text-gray-300">
+      <div className="flex items-center justify-center gap-3 text-gray-300">
         <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-        <span className="text-lg">ECR / OMR, Chennai</span>
+        <span className="text-lg">Yelagiri, Chennai</span>
       </div>
-
-      <div className="flex items-center gap-3 text-gray-300">
+      <div className="flex items-center justify-center text-center mt-10">
+        <Link to={"/detail"} className="bg-[#8BB6B1] text-black text-xl font-semibold px-10 py-3 rounded-xl hover:opacity-80 transition">
+          View Mansion
+        </Link>
+      </div>
+      {/* <div className="flex items-center gap-3 text-gray-300">
         <IndianRupee className="w-6 h-6 text-[#8BB6B1]" />
         <span className="text-lg">12 Cr. Onwards</span>
-      </div>
+      </div> */}
 
     </div>
 
@@ -87,7 +91,7 @@ export default function MansionShowcase() {
   </div>
 
   {/* Details BELOW BOTH columns */}
-  <div className="text-gray-300 text-lg leading-relaxed mt-20 text-center">
+  <div className="text-gray-300 text-lg leading-relaxed mt-10 md:mt-20 text-center">
     <p>
       Exclusive Private Entrance | Double-Height Living Lounge <br />
      Sunlit Courtyard & Landscaped Deck <br />
@@ -97,11 +101,7 @@ export default function MansionShowcase() {
     </p>
   </div>
 
-      <div className="text-center mt-16">
-        <Link to={"/detail"} className="bg-[#8BB6B1] text-black text-xl font-semibold px-10 py-3 rounded-xl hover:opacity-80 transition">
-          View Mansion
-        </Link>
-      </div>
+    
 </div>
       </div>
 

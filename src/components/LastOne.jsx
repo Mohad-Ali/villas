@@ -20,7 +20,7 @@ export default function LastOne() {
     <section className="w-full bg-black text-white py-10 md:py-16 px-4 md:px-20">
 
       {/* -------- TOP HEADING + PARAGRAPH (RIGHT SIDE) -------- */}
-      <div className="max-w-8xl mx-auto mb-20 text-center lg:text-right">
+      <div className="max-w-8xl mx-auto mb-10 md:mb-20 text-center lg:text-right">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Legacy Living, Elevated to Modern Mastery
         </h2>
@@ -33,36 +33,14 @@ export default function LastOne() {
       {/* -------- MAIN TWO COLUMN GRID -------- */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
 
-        {/* -------- LEFT SIDE BIG IMAGE -------- */}
-      
-
-        {/* -------- RIGHT SIDE STACKED CONTENT -------- */}
      {/* -------- RIGHT SIDE TWO COLUMNS + PARAGRAPH -------- */}
-<div className="w-full">
+<div className="w-full ">
 
   {/* Two-column layout */}
-  
-
-  {/* Details BELOW BOTH columns */}
-  <div className="text-gray-300 text-lg leading-relaxed mt-10 text-center">
-    <p>
-      Exclusive Private Entrance | Double-Height Living Lounge <br />
-     Sunlit Courtyard & Landscaped Deck <br />
-      Infinity Pool with Lounge Deck | Dedicated Yoga & Meditation Pavilion <br />
-      State-of-the-Art Fitness Studio <br />
-      Rooftop Sky Terrace
-    </p>
-  </div>
-
-    
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-
-    {/* LEFT: Location + Price */}
-   
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
     {/* RIGHT: Small Image */}
-    <div className="relative w-fit mx-auto mt-4 md:mt-20 md:mx-0">
+    <div className="relative w-fit mx-auto mt-0 md:mt-20 md:mx-0 order-1 md:order-2">
 
       {/* Frame top-right */}
       <div className="absolute -top-4 -right-4 w-20 h-1 bg-[#8BB6B1]" />
@@ -78,30 +56,39 @@ export default function LastOne() {
       <div className="absolute -bottom-4 -left-4 w-20 h-1 bg-[#8BB6B1]" />
       <div className="absolute -bottom-4 -left-4 w-1 h-20 bg-[#8BB6B1]" />
     </div>
-
-
-     <div className="space-y-6 text-center mt-0 md:mt-40">
+    {/* LEFT: Location + Price */}
+    <div className="space-y-6 text-center mt-0 md:mt-40 order-1 md:order-2">
 
       <div className="flex items-center justify-center gap-3 text-gray-300">
         <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-        <span className="text-lg">Nungambakkam, Chennai</span>
+        <span className="text-lg">Yelagiri, Chennai</span>
       </div>
 
-      <div className="flex items-center justify-center gap-3 text-gray-300">
-        <IndianRupee className="w-6 h-6 text-[#8BB6B1]" />
-        <span className="text-lg">10 Cr. Onwards</span>
-      </div>
-
-        <div className="text-center mt-10">
-        <button onClick={handleBookNow} className="bg-[#8BB6B1] text-black text-xl font-semibold px-10 py-3 rounded-xl hover:opacity-80 transition">
+      <div className="text-center mt-10">
+        <button
+          onClick={handleBookNow}
+          className="bg-[#8BB6B1] text-black text-xl font-semibold px-10 py-3 rounded-xl hover:opacity-80 transition"
+        >
           Book Now
         </button>
       </div>
-
     </div>
 
   </div>
+
+  {/* Details BELOW BOTH columns */}
+  <div className="text-gray-300 text-lg leading-relaxed mt-10 text-center order-3">
+    <p>
+      Exclusive Private Entrance | Double-Height Living Lounge <br />
+      Sunlit Courtyard & Landscaped Deck <br />
+      Infinity Pool with Lounge Deck | Dedicated Yoga & Meditation Pavilion <br />
+      State-of-the-Art Fitness Studio <br />
+      Rooftop Sky Terrace
+    </p>
+  </div>
+
 </div>
+
 
 
   <div className="relative flex justify-center lg:justify-end">

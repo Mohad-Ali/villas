@@ -63,13 +63,13 @@ export default function VillaShowcase() {
 
           <div className="flex items-center justify-center gap-3 text-gray-300">
             <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-            <span className="text-lg">ECR / OMR, Chennai</span>
+            <span className="text-lg">Yelagiri Hills, Chennai</span>
           </div>
 
-          <div className="flex items-center justify-center gap-3 text-gray-300">
+          {/* <div className="flex items-center justify-center gap-3 text-gray-300">
             <IndianRupee className="w-6 h-6 text-[#8BB6B1]" />
             <span className="text-lg">12 Cr. Onwards</span>
-          </div>
+          </div> */}
 
           <div className="text-gray-300 text-sm leading-relaxed">
             <p>

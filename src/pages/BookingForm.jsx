@@ -19,31 +19,65 @@ export default function BookingForm() {
   const checkInRef = useRef(null);
   const checkOutRef = useRef(null);
 
-  const [form, setForm] = useState({
-    checkIn: "",
-    checkOut: "",
-    days: "",
-    fullName: "",
-    email: "",
-    address: "",
-    phone: "",
-    villaId: "villa-1",
-  });
+const PRICE_PER_DAY = 15000;
+
+const [form, setForm] = useState({
+  checkIn: "",
+  checkOut: "",
+  days: "",
+  price: 0,        // ✅ ADD THIS
+  fullName: "",
+  email: "",
+   persons: 1, 
+  address: "",
+  phone: "",
+  villaId: "villa-1",
+});
 
   // Auto-calc days
-  useEffect(() => {
-    if (form.checkIn && form.checkOut) {
-      const diff = dayjs(form.checkOut).diff(dayjs(form.checkIn), "day");
-      if (diff > 0) {
-        setForm((prev) => ({ ...prev, days: String(diff) }));
-      }
-    }
-  }, [form.checkIn, form.checkOut]);
+useEffect(() => {
+  if (form.checkIn && form.checkOut) {
+    const diff = dayjs(form.checkOut).diff(dayjs(form.checkIn), "day");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-  };
+    if (diff > 0) {
+      const totalPrice = diff * PRICE_PER_DAY;
+
+      setForm((prev) => ({
+        ...prev,
+        days: String(diff),
+        price: totalPrice,   // ✅ AUTO PRICE UPDATE
+      }));
+    }
+  }
+}, [form.checkIn, form.checkOut]);
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+
+  // ✅ Days → Auto price
+  if (name === "days") {
+    const totalPrice = Number(value || 0) * PRICE_PER_DAY;
+    setForm((prev) => ({
+      ...prev,
+      days: value,
+      price: totalPrice,
+    }));
+    return;
+  }
+
+  // ✅ Persons → Max 10 restriction
+  if (name === "persons") {
+    const personsValue = Math.min(10, Math.max(1, Number(value)));
+    setForm((prev) => ({
+      ...prev,
+      persons: personsValue,
+    }));
+    return;
+  }
+
+  setForm((prev) => ({ ...prev, [name]: value }));
+};
+
 
   // Validation
   const validate = () => {
@@ -88,8 +122,10 @@ export default function BookingForm() {
       checkIn: form.checkIn,
       checkOut: form.checkOut,
       days: Number(form.days),
+      price: form.price, 
       fullName: form.fullName,
       email: form.email,
+      persons: form.persons, 
       address: form.address,
       phone: form.phone,
       villaId: form.villaId,
@@ -202,30 +238,72 @@ export default function BookingForm() {
           </div>
 
           {/* Full Name */}
-          <div>
-            <label className="block font-semibold mb-2">Full Name</label>
-            <input
-              type="text"
-              name="fullName"
-              value={form.fullName}
-              onChange={handleChange}
-              className="w-full bg-transparent border border-gray-400 px-3 py-3 rounded-sm text-white"
-              placeholder="Your full name"
-            />
-          </div>
+       {/* Full Name + Price */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+  {/* Full Name */}
+  <div>
+    <label className="block font-semibold mb-2">Full Name</label>
+    <input
+      type="text"
+      name="fullName"
+      value={form.fullName}
+      onChange={handleChange}
+      className="w-full bg-transparent border border-gray-400 px-3 py-3 rounded-sm text-white"
+      placeholder="Your full name"
+    />
+  </div>
+
+  {/* ✅ AUTO PRICE (READ ONLY) */}
+  <div>
+    <label className="block font-semibold mb-2">Total Price</label>
+    <input
+      type="text"
+      value={`₹ ${form.price.toLocaleString()}`}
+      readOnly
+      className="w-full bg-gray-900 border border-gray-400 px-3 py-3 rounded-sm text-[#0aa8e6] font-bold cursor-not-allowed"
+    />
+  </div>
+
+</div>
+
 
           {/* Email */}
-          <div>
-            <label className="block font-semibold mb-2">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              className="w-full bg-transparent border border-gray-400 px-3 py-3 rounded-sm text-white"
-              placeholder="you@example.com"
-            />
-          </div>
+         {/* Email + Persons */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+  {/* Email */}
+  <div>
+    <label className="block font-semibold mb-2">Email</label>
+    <input
+      type="email"
+      name="email"
+      value={form.email}
+      onChange={handleChange}
+      className="w-full bg-transparent border border-gray-400 px-3 py-3 rounded-sm text-white"
+      placeholder="you@example.com"
+    />
+  </div>
+
+  {/* ✅ Number of Persons */}
+  <div>
+    <label className="block font-semibold mb-2">Number of Persons</label>
+    <input
+      type="number"
+      name="persons"
+      value={form.persons}
+      onChange={handleChange}
+      min="1"
+      max="10"
+      className="w-full bg-transparent border border-gray-400 px-3 py-3 rounded-sm text-white"
+    />
+    <p className="text-xs text-gray-400 mt-1">
+      Maximum 10 persons
+    </p>
+  </div>
+
+</div>
+
 
           {/* Address */}
           <div>

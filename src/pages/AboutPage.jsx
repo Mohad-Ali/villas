@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <div   data-scroll-section className="bg-black text-white px-6 md:px-20 pt-24">
+    <div   data-scroll-section className="bg-black text-white px-6 md:px-20 py-24">
 
       {/* TITLE */}
       <h1 className="text-3xl md:text-4xl font-bold mb-10">About US</h1>

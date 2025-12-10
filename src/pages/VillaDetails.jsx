@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";  
 import {
   ChevronLeft,
   ChevronRight,
-  Star,
-  Wifi,
   Car,
+  Wifi,
   Snowflake,
   Tv,
   Wallet,
@@ -13,38 +12,121 @@ import {
   Plug,
   Brush
 } from "lucide-react";
+import { gsap } from "gsap";
 
 export default function VillaDetails() {
   const images = ["/image10.png", "/image11.png", "/image12.png", "/image13.png", "/image14.png"];
   const [index, setIndex] = useState(0);
 
-  const prevSlide = () => setIndex(index === 0 ? images.length - 1 : index - 1);
-  const nextSlide = () => setIndex(index === images.length - 1 ? 0 : index + 1);
+  const currentRef = useRef(null);
+  const nextRef = useRef(null);
+  const animating = useRef(false);
+  const timerRef = useRef(null);
+
+  // Preload images to prevent flash
+  useEffect(() => {
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  // Auto-slide every 2 seconds
+  useEffect(() => {
+    startAuto();
+    return () => clearInterval(timerRef.current);
+  }, [index]);
+
+  const startAuto = () => {
+    clearInterval(timerRef.current);
+    timerRef.current = setInterval(slideNext, 2000);
+  };
+
+  const slideNext = () => {
+    if (animating.current) return;
+    animating.current = true;
+
+    const nextIndex = index === images.length - 1 ? 0 : index + 1;
+
+    gsap.set(nextRef.current, {
+      x: "100%",
+      backgroundImage: `url(${images[nextIndex]})`,
+    });
+
+    gsap.to(currentRef.current, { x: "-100%", duration: 0.9, ease: "power2.inOut" });
+    gsap.to(nextRef.current, {
+      x: "0%",
+      duration: 0.9,
+      ease: "power2.inOut",
+      onComplete: () => {
+        setIndex(nextIndex);
+        gsap.set(currentRef.current, {
+          x: "0%",
+          backgroundImage: `url(${images[nextIndex]})`,
+        });
+        gsap.set(nextRef.current, { x: "100%" });
+        animating.current = false;
+      },
+    });
+  };
+
+  const slidePrev = () => {
+    if (animating.current) return;
+    animating.current = true;
+
+    const prevIndex = index === 0 ? images.length - 1 : index - 1;
+
+    gsap.set(nextRef.current, {
+      x: "-100%",
+      backgroundImage: `url(${images[prevIndex]})`,
+    });
+
+    gsap.to(currentRef.current, { x: "100%", duration: 0.9, ease: "power2.inOut" });
+    gsap.to(nextRef.current, {
+      x: "0%",
+      duration: 0.9,
+      ease: "power2.inOut",
+      onComplete: () => {
+        setIndex(prevIndex);
+        gsap.set(currentRef.current, {
+          x: "0%",
+          backgroundImage: `url(${images[prevIndex]})`,
+        });
+        gsap.set(nextRef.current, { x: "-100%" });
+        animating.current = false;
+      },
+    });
+  };
 
   return (
     <>
       {/* HERO SECTION */}
-      <section
-        data-scroll-section
-        className="relative w-full h-[70vh] md:h-screen flex items-center justify-center"
-      >
-        <img
-          src={images[index]}
-          className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
+      <section className="relative w-full h-[70vh] md:h-screen overflow-hidden">
+        {/* CURRENT IMAGE */}
+        <div
+          ref={currentRef}
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${images[index]})` }}
+        />
+
+        {/* NEXT IMAGE */}
+        <div
+          ref={nextRef}
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
         />
 
         <div className="absolute inset-0 bg-black/30" />
 
+        {/* CONTROLS */}
         <button
-          onClick={prevSlide}
-          className="absolute cursor-pointer bottom-10 left-6 md:left-10 z-30 bg-[#7ba9a7] p-5 rounded-full"
+          onClick={slidePrev}
+          className="absolute bottom-10 left-6 md:left-10 z-30 bg-[#7ba9a7] p-5 rounded-full"
         >
           <ChevronLeft className="text-white" />
         </button>
-
         <button
-          onClick={nextSlide}
-          className="absolute cursor-pointer bottom-10 right-6 md:right-10 z-30 bg-[#7ba9a7] p-5 rounded-full"
+          onClick={slideNext}
+          className="absolute bottom-10 right-6 md:right-10 z-30 bg-[#7ba9a7] p-5 rounded-full"
         >
           <ChevronRight className="text-white" />
         </button>
@@ -54,13 +136,6 @@ export default function VillaDetails() {
       <section data-scroll-section className="px-5 md:px-20 py-10 bg-black text-white">
         <h1 className="text-3xl font-bold">Townhouse Villa</h1>
         <p className="text-gray-300 text-xl mt-1">Near Old MLA Quarters, MG road, Chennai</p>
-
-        {/* <div className="flex items-center gap-3 mt-3">
-          <span className="bg-green-600 px-2 py-1 rounded text-sm font-semibold flex items-center gap-1">
-            <Star size={14} className="text-white" /> 4.0
-          </span>
-          <span className="text-gray-400 text-md">(217 Rating)</span>
-        </div> */}
 
         <div className="grid grid-cols-2 md:grid-cols-3 text-md md:text-xl gap-y-4 gap-x-6 mt-7 text-gray-200">
           <div className="flex items-center gap-2"><Car size={18} /> Parking facility</div>
@@ -84,18 +159,10 @@ export default function VillaDetails() {
         <div className="mt-10">
           <h2 className="text-2xl font-bold mb-3">About this Villa</h2>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-          Villa’s are designed around the lifestyle and expectations of modern travelers. Every aspect – from the interiors and amenities to the booking experience – has been thoughtfully crafted to offer comfort, convenience, style, and value.In these villa there are 3 Bed rooms, Kitchen, 3 Bathrooms, Peaceful balcony, and Hall with Super Interior
+            Villa’s are designed around the lifestyle and expectations of modern travelers. Every aspect – from the interiors and amenities to the booking experience – has been thoughtfully crafted to offer comfort, convenience, style, and value. In these villas there are 3 bedrooms, kitchen, 3 bathrooms, peaceful balcony, and hall with super interior.
           </p>
         </div>
       </section>
     </>
   );
 }
-
-
-
-
-
-
-
-
