@@ -31,7 +31,7 @@ export default function Footer() {
 
           <div className="space-y-3 flex flex-col">
             <Link to={"/about"} className="cursor-pointer hover:text-white transition">About</Link>
-            <Link to={"/teams"} className="cursor-pointer hover:text-white transition">Teams / Careers</Link>
+            <Link to={"/teams"} className="cursor-pointer hover:text-white transition">Teams  /  Careers</Link>
             <Link to={"/support"} className="cursor-pointer hover:text-white transition">Support</Link>
           </div>
 
