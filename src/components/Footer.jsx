@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-around gap-12 md:gap-20">
 
         {/* LOGO + CONTACT INFO */}
-        <div className="flex flex-col items-start gap-4">
+        <div className="flex flex-col items-start gap-2">
           <img
             src="/logo.png"
             alt="Classy Villas Logo"
@@ -20,8 +20,9 @@ export default function Footer() {
           />
 
           {/* Contact Info */}
-          <div className="text-gray-400 text-sm space-y-1">
+          <div className="text-gray-300 text-sm space-y-1 ">
             <p>Email: <span className="text-white">example@gmail.com</span></p>
+            <p>Address: <span className="text-white ">New no 355 / 2 A1B, Athnavoor Yelagiri hills,</span> <hr className="border-none" /> Landmark near AGS Resort</p>
             <p>Contact: <span className="text-white">+91 9840942784</span></p>
           </div>
         </div>

@@ -60,9 +60,16 @@ export default function LastOne() {
     <div className="space-y-6 text-center mt-0 md:mt-40 order-1 md:order-2">
 
       <div className="flex items-center justify-center gap-3 text-gray-300">
-        <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-        <span className="text-lg">Yelagiri, Chennai</span>
-      </div>
+      <MapPin className="w-6 h-6 text-[#8BB6B1]" />
+      <a
+        href="https://www.google.com/maps?q=12.580024719238281,78.63467407226562&z=17&hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-lg hover:underline"
+      >
+        Yelagiri Hills, Chennai
+      </a>
+    </div>
 
       <div className="text-center mt-10">
         <button

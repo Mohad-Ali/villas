@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, IndianRupee } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
 
 export default function VillaShowcase() {
@@ -46,7 +46,7 @@ export default function VillaShowcase() {
             <div className="absolute -top-4 -left-4 w-1 h-16 bg-[#8BB6B1]" />
 
             <img
-              src="/image1.png"
+              src="/image24.png"
               alt="Villa Left"
               className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-lg"
             />
@@ -61,10 +61,17 @@ export default function VillaShowcase() {
         {/* CENTER TEXT */}
         <div className="text-center space-y-6 px-2 lg:px-6">
 
-          <div className="flex items-center justify-center gap-3 text-gray-300">
-            <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-            <span className="text-lg">Yelagiri Hills, Chennai</span>
-          </div>
+         <div className="flex items-center justify-center gap-3 text-gray-300">
+  <MapPin className="w-6 h-6 text-[#8BB6B1]" />
+  <a
+    href="https://www.google.com/maps?q=12.580024719238281,78.63467407226562&z=17&hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-lg hover:underline"
+  >
+    Yelagiri Hills, Chennai
+  </a>
+</div>
 
           {/* <div className="flex items-center justify-center gap-3 text-gray-300">
             <IndianRupee className="w-6 h-6 text-[#8BB6B1]" />
@@ -100,7 +107,7 @@ export default function VillaShowcase() {
             <div className="absolute -top-4 -right-4 w-1 h-16 bg-[#8BB6B1]" />
 
             <img
-              src="/image2.png"
+              src="/image6.png"
               alt="Villa Right"
               className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-lg"
             />
