@@ -13,8 +13,8 @@ export default function MansionShowcase() {
         </h2>
 
         <p className="text-gray-300 leading-relaxed max-w-3xl ml-auto">
-          Classy Villas is the embodiment of refined elegance — a collection of 
-          contemporary luxury villas crafted for families who value privacy, warmth, 
+          Classy Villa is the embodiment of refined elegance — a collection of 
+          contemporary luxury villa crafted for families who value privacy, warmth, 
           and timeless design. Each villa is an architectural masterpiece that blends 
           space, natural light, and sophistication to create a sanctuary of comfort 
           and exclusivity.
@@ -100,11 +100,9 @@ export default function MansionShowcase() {
   {/* Details BELOW BOTH columns */}
   <div className="text-gray-300 text-lg leading-relaxed mt-10 md:mt-20 text-center">
     <p>
-      Exclusive Private Entrance | Double-Height Living Lounge <br />
-     Sunlit Courtyard & Landscaped Deck <br />
-      Infinity Pool with Lounge Deck | Dedicated Yoga & Meditation Pavilion <br />
-      State-of-the-Art Fitness Studio <br />
-      Rooftop Sky Terrace
+     Entrance | Staircase | Architecture<br />
+     Elegant Architectural Details <br />
+      A refined entrance with modern lighting and clean lines that reflect timeless design. <br />
     </p>
   </div>
 

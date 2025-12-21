@@ -12,7 +12,7 @@ export default function Term() {
 
         {/* INTRO PARAGRAPH */}
         <p className="leading-relaxed text-gray-300 text-lg">
-        Welcome to Classy Villas. By accessing or using our website and services, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.
+        Welcome to Classy Villa. By accessing or using our website and services, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.
         </p>
 
         {/* SECTION 1 */}
@@ -89,7 +89,7 @@ export default function Term() {
 
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-   Classy Villas is not responsible for personal injury, loss, or theft during the stay.
+   Classy Villa is not responsible for personal injury, loss, or theft during the stay.
             </li>
             <li>
  We reserve the right to modify these terms at any time without prior notice.

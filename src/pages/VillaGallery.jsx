@@ -197,6 +197,8 @@ export default function VillaGallery() {
         </li>
         <li>Pets are not allowed on the premises</li>
         <li>Parties, gatherings, or commercial events are not permitted</li>
+        <li>Guests are expected to respect property rules, neighbors, and local laws.</li>
+        <li>Noise levels should be kept reasonable, especially during night hours.</li>
       </ul>
     </div>
 
@@ -245,7 +247,7 @@ export default function VillaGallery() {
         6 Check-In and Check-Out Policy:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
-        <li>Check-in time is between 10:00 AM and 2:00 PM</li>
+        <li>Check-in time is 2:00 PM and Check out at 11 am</li>
         <li>Guests must inform their arrival time in advance</li>
         <li>Check-out is flexible; guests are requested to inform at least 2 hours prior to departure</li>
       </ul>
@@ -270,6 +272,7 @@ export default function VillaGallery() {
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>An advance payment of ₹10,000 is required at the time of booking</li>
         <li>Accepted modes of payment include Google Pay and bank transfer</li>
+        <li>The daily rate is ₹15,000 per day from Monday to Thursday and ₹20,000 per day from Friday to Sunday.</li>
       </ul>
     </div>
 
@@ -299,7 +302,7 @@ export default function VillaGallery() {
 
         {/* INTRO PARAGRAPH */}
         <p className="leading-relaxed text-gray-300 text-lg">
-        Welcome to Classy Villas. By accessing or using our website and services, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.
+        Welcome to Classy Villa. By accessing or using our website and services, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.
         </p>
 
         {/* SECTION 1 */}
@@ -345,7 +348,7 @@ export default function VillaGallery() {
         Bachelor’s not allowed 
             </li>
             <li>
-        Only Couple and Family allowed.
+        Only Couple and Family allowed, unmarried couples are not allowed.
             </li>
             <li>
         Passport, Aadhar card, Driving license and Gov I’d are accepted as id proof.
@@ -366,7 +369,7 @@ export default function VillaGallery() {
       Spacious Room with attached Bathroom with Bath Tub.
             </li>
             <li>
-     Check in 10.00 am to 2.00 pm.
+     Check in time at 2 pm and Check out at 11 am
             </li>
           </ul>
         </div>
@@ -376,7 +379,7 @@ export default function VillaGallery() {
 
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-   Classy Villas is not responsible for personal injury, loss, or theft during the stay.
+   Classy Villa is not responsible for personal injury, loss, or theft during the stay.
             </li>
             <li>
  We reserve the right to modify these terms at any time without prior notice.

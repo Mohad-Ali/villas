@@ -12,7 +12,7 @@ export default function Support() {
 
         {/* INTRO PARAGRAPH */}
         <p className="leading-relaxed text-gray-300 text-lg">
-       At Classy Villas, we are committed to providing exceptional support to ensure your villa experience is seamless and enjoyable.
+       At Classy Villa, we are committed to providing exceptional support to ensure your villa experience is seamless and enjoyable.
         </p>
 
         {/* SECTION 1 */}

@@ -53,7 +53,7 @@ export default function Guest() {
 
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-        Villas must be used for residential purposes only.
+        Villa must be used for residential purposes only.
             </li>
             <li>
         Any damage or excessive cleaning required will be charged to the guest.

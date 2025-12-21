@@ -159,7 +159,7 @@ export default function VillaDetails() {
         <div className="mt-10">
           <h2 className="text-2xl font-bold mb-3">About this Villa</h2>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
-            Villa’s are designed around the lifestyle and expectations of modern travelers. Every aspect – from the interiors and amenities to the booking experience – has been thoughtfully crafted to offer comfort, convenience, style, and value. In these villas there are 3 bedrooms, kitchen, 3 bathrooms, peaceful balcony, and hall with super interior.
+            Villa’s are designed around the lifestyle and expectations of modern travelers. Every aspect – from the interiors and amenities to the booking experience – has been thoughtfully crafted to offer comfort, convenience, style, and value. In these villa there are 3 bedrooms, kitchen, 3 bathrooms, peaceful balcony, and hall with super interior.
           </p>
         </div>
       </section>

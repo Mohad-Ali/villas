@@ -12,9 +12,9 @@ export default function AboutPage() {
 
         {/* LEFT TEXT */}
         <p className="text-gray-300 text-lg leading-relaxed md:w-2/3 mt-0 md:mt-20">
-          At Classy Villas, we redefine the art of luxury living. With a passion
+          At Classy Villa, we redefine the art of luxury living. With a passion
           for exceptional design, comfort, and personalized service, we curate an
-          exclusive collection of villas that combine sophistication with serenity.
+          exclusive collection of villa that combine sophistication with serenity.
           Each property is handpicked for its unique character, architectural
           beauty, and location—whether overlooking crystal-clear waters, nestled
           in lush landscapes, or set against stunning city views.

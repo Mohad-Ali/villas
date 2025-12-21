@@ -12,7 +12,7 @@ export default function TeamsAndCareers() {
 
         {/* INTRO PARAGRAPH */}
         <p className="leading-relaxed text-gray-300 text-lg">
-          At Classy Villas, we believe that exceptional service begins with an 
+          At Classy Villa, we believe that exceptional service begins with an 
           exceptional team. Our people are the heart of our business, dedicated 
           to delivering luxury experiences with care, professionalism, and attention 
           to detail.

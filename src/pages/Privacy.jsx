@@ -53,7 +53,7 @@ export default function Privacy() {
 
           <ul className="list-disc list-inside space-y-2 text-gray-300">
             <li>
-         Guests can request access, correction, or deletion of personal data at any time.
+         Guests can request access or correction of personal data at any time but deletion request will only be done at the time of check out
             </li>
           </ul>
         </div>

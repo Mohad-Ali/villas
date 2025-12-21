@@ -13,7 +13,7 @@ export default function Contact() {
         </h2>
 
         <p className="text-gray-300 leading-relaxed max-w-3xl ml-auto">
-        Nestled along the serene stretches of ECR, Classy Villas embodies the art of quiet sophistication. Each villa harmoniously blends contemporary architecture with natural serenity — a sanctuary crafted for the discerning few who value space, style, and privacy above all
+        Nestled along the serene stretches of Yelagiri, Classy Villa embodies the art of quiet sophistication. Each villa harmoniously blends contemporary architecture with natural serenity — a sanctuary crafted for the discerning few who value space, style, and privacy above all
         </p>
       </div>
 
@@ -50,11 +50,9 @@ export default function Contact() {
   {/* Details BELOW BOTH columns */}
   <div className="text-gray-300 text-lg leading-relaxed mt-0 md:mt-10 text-center">
     <p>
-      Exclusive Private Entrance | Double-Height Living Lounge <br />
-     Sunlit Courtyard & Landscaped Deck <br />
-      Infinity Pool with Lounge Deck | Dedicated Yoga & Meditation Pavilion <br />
-      State-of-the-Art Fitness Studio <br />
-      Rooftop Sky Terrace
+     Living Room Interior <br />
+    Comfort Meets Luxury Spacious  <br />
+     living areas designed for relaxation, warmth, and everyday elegance. <br />
     </p>
   </div>
 

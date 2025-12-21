@@ -28,7 +28,7 @@ export default function VillaShowcase() {
         </h2>
         <p className="text-gray-300 leading-relaxed">
           Step into a world where sophistication meets serenity.
-          Classy Villas Chennai presents a curated collection of premium villas  
+          Classy Villa Chennai presents a curated collection of premium villa  
           designed for those who seek more than a home — a lifestyle defined by  
           elegance, comfort, and exclusivity.
         </p>
@@ -78,17 +78,11 @@ export default function VillaShowcase() {
             <span className="text-lg">12 Cr. Onwards</span>
           </div> */}
 
-          <div className="text-gray-300 text-sm leading-relaxed">
+          <div className="text-gray-300 text-lg leading-relaxed">
             <p>
-              Grand Double-Height Entrance Lounge | Private Landscaped Lawns <br />
-              Sunlit Living Spaces with Floor-to-Ceiling Windows <br />
-              Infinity Edge Pool & Leisure Deck | Exclusive Sky Lounge with City Views <br />
-              Spa & Steam Suite | Indoor Fitness Studio | Meditation & Yoga Pavilion <br />
-              Outdoor Kids Play Area & Toddler Zone <br />
-              Private Home Theatre Room <br />
-              Board Room & Business Lounge | Recessed Water Feature Courtyard <br />
-              Pet Garden <br />
-              Rooftop Sky Deck & Cabana Zone
+              Outdoor | Pathway | Landscape | <br />
+              Calm, Thoughtfully Designed Outdoors <br />
+              Beautifully landscaped pathways that create a peaceful and welcoming first impression. <br />
             </p>
           </div>
 

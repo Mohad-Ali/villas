@@ -9,9 +9,9 @@ export default function HomePage() {
   const images = [
     "/image11.png",
     "/image8.png",
-    "/image25.png",
     "/image3.png",
     "/image7.png",
+    "/image23.jpeg",
   ];
 
   const [index, setIndex] = useState(0);
@@ -90,11 +90,17 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* TEXT */}
-      <div className="relative z-20 h-full flex items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white">
-          Classy Villas
-        </h1>
-      </div>
+     <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 pointer-events-none">
+    <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+      Classy Villa
+    </h1>
+    <p className="text-white max-w-4xl text-md md:text-xl">
+      Classy Villa offers exclusive villa stays designed for travelers who value
+      space, privacy, and sophistication. From peaceful mornings to indulgent
+      evenings, every detail is curated to ensure comfort, elegance, and
+      unforgettable moments.
+    </p>
+  </div>
     </section>
 
       {/* COMPONENT SECTIONS */}
