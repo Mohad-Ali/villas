@@ -79,7 +79,7 @@ export default function Term() {
       Spacious Room with attached Bathroom with Bath Tub.
             </li>
             <li>
-     Check in 10.00 am to 2.00 pm.
+     Check in 2.00 pm to 11.00 am.
             </li>
           </ul>
         </div>

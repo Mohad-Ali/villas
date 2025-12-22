@@ -135,7 +135,7 @@ export default function VillaDetails() {
       {/* DETAILS SECTION */}
       <section data-scroll-section className="px-5 md:px-20 py-10 bg-black text-white">
         <h1 className="text-3xl font-bold">Townhouse Villa</h1>
-        <p className="text-gray-300 text-xl mt-1">Yelagiri Hills, Tirpathur District.</p>
+        <p className="text-gray-300 text-xl mt-1">Near AGS Resort,Yelagiri Hills, Tirpathur District.</p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 text-md md:text-xl gap-y-4 gap-x-6 mt-7 text-gray-200">
           <div className="flex items-center gap-2"><Car size={18} /> Parking facility</div>
