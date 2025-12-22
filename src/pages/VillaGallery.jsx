@@ -168,7 +168,17 @@ export default function VillaGallery() {
     {/* SECTION 1 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        1 Amenities Provided:
+        1 Tariff Details:
+      </h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-300">
+        <li>Weekdays(Monday - Thursday): ₹15,000 /- per night</li>
+        <li>Weekends(Friday, Saturday & Sunday): ₹20,000 /- per night</li>
+      </ul>
+    </div>
+
+    <div className="space-y-3">
+      <h2 className="text-xl md:text-2xl font-semibold">
+        2 Amenities Provided:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Private kitchen for guest use</li>
@@ -183,7 +193,7 @@ export default function VillaGallery() {
     {/* SECTION 2 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        2 Property Rules:
+        3 Property Rules:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Bachelors are not permitted</li>
@@ -205,7 +215,7 @@ export default function VillaGallery() {
     {/* SECTION 3 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        3 Food and Dining Policy:
+        4 Food and Dining Policy:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Vegetarian and non-vegetarian food is permitted</li>
@@ -217,7 +227,7 @@ export default function VillaGallery() {
     {/* SECTION 4 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        4 Kitchen Facilities:
+        5 Kitchen Facilities:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Stovetop</li>
@@ -231,7 +241,7 @@ export default function VillaGallery() {
     {/* SECTION 5 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        5 Bedrooms and Accommodation:
+        6 Bedrooms and Accommodation:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Spacious air-conditioned bedrooms with attached bathrooms</li>
@@ -244,7 +254,7 @@ export default function VillaGallery() {
     {/* SECTION 6 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        6 Check-In and Check-Out Policy:
+        7 Check-In and Check-Out Policy:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Check-in time is 2:00 PM and Check out at 11 am</li>
@@ -256,7 +266,7 @@ export default function VillaGallery() {
     {/* SECTION 7 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        7 Refund and Cancellation Policy:
+        8 Refund and Cancellation Policy:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>Cancellation is allowed within 24 hours of booking</li>
@@ -267,7 +277,7 @@ export default function VillaGallery() {
     {/* SECTION 8 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        8 Advance Booking and Payment:
+        9 Advance Booking and Payment:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>An advance payment of ₹10,000 is required at the time of booking</li>
@@ -279,7 +289,27 @@ export default function VillaGallery() {
     {/* SECTION 9 */}
     <div className="space-y-3">
       <h2 className="text-xl md:text-2xl font-semibold">
-        9 Contact Information:
+        10 Sight seeing details:
+      </h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-300">
+        <li>Boat house - 6 min (1.8 km)</li>
+        <li>Yelagiri nature park - 5 min (1.5 km)</li>
+        <li>A R Thanga kottai - 8 min - (1.7 km)</li>
+        <li>Thrill Valley - 12 min  (3.2 km)</li>
+        <li>Skyraa Entertainment - 9 min (3.2 km)</li>
+        <li>Fundera Birds park - 12 min (2.8 km)</li>
+        <li>Selfie Panda - 9 min   (3.4 km)</li>
+        <li>View point - 4 min (1.0 km)</li>
+        <li>AGS Wonder World - 12 min  (4.9 km)</li>
+        <li>Swami Malai Hills - 16 min  (5.5 km)</li>
+        <li>Jalagamparai Waterfalls - 5 min (1.2 km)</li>
+        <li>Mountain View  Adventure - 12 min (2.6 km)</li>
+        <li>WhatsApp / Call: 9840942784, 9003723648</li>
+      </ul>
+    </div>
+    <div className="space-y-3">
+      <h2 className="text-xl md:text-2xl font-semibold">
+        11 Contact Information:
       </h2>
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>For enquiries and bookings, please contact:</li>
@@ -289,105 +319,6 @@ export default function VillaGallery() {
 
   </div>
 </div>
-
-
-      {/* Below content */}
-       <div className="min-h-screen bg-black text-white px-6 md:px-16 pb-20">
-      <div className="max-w-8xl mx-auto space-y-10">
-
-        {/* TITLE */}
-        <h1 className="text-3xl md:text-5xl font-bold">
-          Terms and Condition
-        </h1>
-
-        {/* INTRO PARAGRAPH */}
-        <p className="leading-relaxed text-gray-300 text-lg">
-        Welcome to Classy Villa. By accessing or using our website and services, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully.
-        </p>
-
-        {/* SECTION 1 */}
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold">1 Booking and Payment:</h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>All bookings are subject to availability and confirmation.</li>
-            <li>Payment must be made according to the schedule provided at the time of booking.</li>
-            <li>Prices may change due to seasonal fluctuations or special offers.</li>
-          </ul>
-        </div>
-
-        {/* SECTION 2 */}
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold">2 Cancellation and Refunds:</h2>
-
-          <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>Cancellation policies vary per villa and are specified at the time of booking.</li>
-            <li>Refunds, if applicable, will be processed according to the cancellation terms.</li>
-          </ul>
-        </div>
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold">3 Advance Booking:</h2>
-
-          <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>Rs 10,000 will be charged at the time of bookings</li>
-            <li>you can pay us at Google Pay or Account Number</li>
-          </ul>
-        </div>
-
-        {/* SECTION 3 */}
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold">3 Guest Responsibility:</h2>
-
-          <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>
-           Guests are responsible for any damage caused to the property during their stay.
-            </li>
-            <li>
-        parties, or events may only be allowed with prior written permission.
-            </li>
-            <li>
-        Bachelor’s not allowed 
-            </li>
-            <li>
-        Only Couple and Family allowed, unmarried couples are not allowed.
-            </li>
-            <li>
-        Passport, Aadhar card, Driving license and Gov I’d are accepted as id proof.
-            </li>
-            <li>
-         Smoking, drinking and consumption of Pork is STRICTLY PROHIBITED.
-            </li>
-            <li>
-        Pet are not allowed / Parties and events are not allowed.
-            </li>
-            <li>
-       Veg and Non veg is allowed (Pork is not allowed)
-            </li>
-            <li>
-       Private kitchen is available for cooking.
-            </li>
-            <li>
-      Spacious Room with attached Bathroom with Bath Tub.
-            </li>
-            <li>
-     Check in time at 2 pm and Check out at 11 am
-            </li>
-          </ul>
-        </div>
-
-        <div className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-semibold">4 Limitation of Liability:</h2>
-
-          <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>
-   Classy Villa is not responsible for personal injury, loss, or theft during the stay.
-            </li>
-            <li>
- We reserve the right to modify these terms at any time without prior notice.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
       {/* FULLSCREEN */}
       {fullscreenImg && (
