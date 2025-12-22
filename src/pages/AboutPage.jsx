@@ -12,12 +12,7 @@ export default function AboutPage() {
 
         {/* LEFT TEXT */}
         <p className="text-gray-300 text-lg leading-relaxed md:w-2/3 mt-0 md:mt-20">
-          At Classy Villa, we redefine the art of luxury living. With a passion
-          for exceptional design, comfort, and personalized service, we curate an
-          exclusive collection of villa that combine sophistication with serenity.
-          Each property is handpicked for its unique character, architectural
-          beauty, and location—whether overlooking crystal-clear waters, nestled
-          in lush landscapes, or set against stunning city views.
+         Our journey began with a vision to create a villa that offers timeless design, functional layouts, and a tranquil lifestyle. From architecture to interiors, every element is curated to provide spacious living, abundant natural light, and seamless indoor-outdoor flow. We focus on craftsmanship, premium materials, and thoughtful planning to ensure lasting value and elegance.
         </p>
 
         {/* RIGHT CIRCLE IMAGE */}

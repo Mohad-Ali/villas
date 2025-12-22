@@ -28,7 +28,7 @@ export default function VillaShowcase() {
         </h2>
         <p className="text-gray-300 leading-relaxed">
           Step into a world where sophistication meets serenity.
-          Classy Villa Chennai presents a curated collection of premium villa  
+          Classy Villa Yelagiri presents a curated collection of premium villa  
           designed for those who seek more than a home — a lifestyle defined by  
           elegance, comfort, and exclusivity.
         </p>
@@ -69,7 +69,7 @@ export default function VillaShowcase() {
     rel="noopener noreferrer"
     className="text-lg hover:underline"
   >
-    Yelagiri Hills, Chennai
+    Yelagiri Hills, Tirpathur District.
   </a>
 </div>
 

@@ -19,7 +19,7 @@ export default function Guest() {
         <div className="space-y-3">
           <h2 className="text-xl md:text-2xl font-semibold">1 Check-in and Check-out:</h2>
         <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>Standard check-in: 3:00 PM | Standard check-out: 11:00 AM (subject to villa policy).</li>
+            <li>Standard check-in: 2:00 PM | Standard check-out: 11:00 AM (subject to villa policy).</li>
             <li>Early check-in or late check-out may be requested in advance and may incur additional charges.</li>
           </ul>
         </div>

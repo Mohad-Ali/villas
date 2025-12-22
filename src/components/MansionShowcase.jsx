@@ -62,7 +62,7 @@ export default function MansionShowcase() {
     rel="noopener noreferrer"
     className="text-lg hover:underline"
   >
-    Yelagiri Hills, Chennai
+    Yelagiri Hills, Tirpathur District.
   </a>
 </div>
       <div className="flex items-center justify-center text-center mt-10">

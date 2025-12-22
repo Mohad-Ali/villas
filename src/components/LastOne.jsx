@@ -67,7 +67,7 @@ export default function LastOne() {
         rel="noopener noreferrer"
         className="text-lg hover:underline"
       >
-        Yelagiri Hills, Chennai
+        Yelagiri Hills, Tirpathur District.
       </a>
     </div>
 

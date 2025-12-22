@@ -94,12 +94,12 @@ export default function HomePage() {
     <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
       Classy Villa
     </h1>
-    <p className="text-white max-w-4xl text-md md:text-xl">
+    {/* <p className="text-white max-w-4xl text-md md:text-xl">
       Classy Villa offers exclusive villa stays designed for travelers who value
       space, privacy, and sophistication. From peaceful mornings to indulgent
       evenings, every detail is curated to ensure comfort, elegance, and
       unforgettable moments.
-    </p>
+    </p> */}
   </div>
     </section>
 

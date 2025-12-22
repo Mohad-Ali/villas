@@ -86,7 +86,7 @@ export default function Contact() {
 
       <div className="flex items-center justify-center gap-3 text-gray-300">
         <MapPin className="w-6 h-6 text-[#8BB6B1]" />
-        <span className="text-lg">Yelagiri, Chennai</span>
+        <span className="text-lg">Yelagiri Hills, Tirpathur District.</span>
       </div>
 {/* 
       <div className="flex items-center justify-center gap-3 text-gray-300">
