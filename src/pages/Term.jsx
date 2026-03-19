@@ -166,8 +166,89 @@ export default function Term() {
         <li>WhatsApp / Call: 9840942784, 9003723648</li>
       </ul>
     </div>
-    
       </div>
     </div>
   );
 }
+
+
+//    <div className="space-y-3">
+//           <h2 className="text-xl md:text-2xl font-semibold">1 Booking and Payment:</h2>
+//         <ul className="list-disc list-inside space-y-2 text-gray-300">
+//             <li>All bookings are subject to availability and confirmation.</li>
+//             <li>Payment must be made according to the schedule provided at the time of booking.</li>
+//             <li>Prices may change due to seasonal fluctuations or special offers.</li>
+//           </ul>
+//         </div>
+
+//         {/* SECTION 2 */}
+//         <div className="space-y-3">
+//           <h2 className="text-xl md:text-2xl font-semibold">2 Cancellation and Refunds:</h2>
+
+//           <ul className="list-disc list-inside space-y-2 text-gray-300">
+//             <li>Cancellation policies vary per villa and are specified at the time of booking.</li>
+//             <li>Refunds, if applicable, will be processed according to the cancellation terms.</li>
+//           </ul>
+//         </div>
+//         <div className="space-y-3">
+//           <h2 className="text-xl md:text-2xl font-semibold">3 Advance Booking:</h2>
+
+//           <ul className="list-disc list-inside space-y-2 text-gray-300">
+//             <li>Rs 10,000 will be charged at the time of bookings</li>
+//             <li>you can pay us at Google Pay or Account Number</li>
+//           </ul>
+//         </div>
+
+//         {/* SECTION 3 */}
+//         <div className="space-y-3">
+//           <h2 className="text-xl md:text-2xl font-semibold">3 Guest Responsibility:</h2>
+
+//           <ul className="list-disc list-inside space-y-2 text-gray-300">
+//             <li>
+//            Guests are responsible for any damage caused to the property during their stay.
+//             </li>
+//             <li>
+//         parties, or events may only be allowed with prior written permission.
+//             </li>
+//             <li>
+//         Bachelor’s not allowed 
+//             </li>
+//             <li>
+//         Only Couple and Family allowed.
+//             </li>
+//             <li>
+//         Passport, Aadhar card, Driving license and Gov I’d are accepted as id proof.
+//             </li>
+//             <li>
+//          Smoking, drinking and consumption of Pork is STRICTLY PROHIBITED.
+//             </li>
+//             <li>
+//         Pet are not allowed / Parties and events are not allowed.
+//             </li>
+//             <li>
+//        Veg and Non veg is allowed (Pork is not allowed)
+//             </li>
+//             <li>
+//        Private kitchen is available for cooking.
+//             </li>
+//             <li>
+//       Spacious Room with attached Bathroom with Bath Tub.
+//             </li>
+//             <li>
+//      Check in 2.00 pm to 11.00 am.
+//             </li>
+//           </ul>
+//         </div>
+
+//         <div className="space-y-3">
+//           <h2 className="text-xl md:text-2xl font-semibold">4 Limitation of Liability:</h2>
+
+//           <ul className="list-disc list-inside space-y-2 text-gray-300">
+//             <li>
+//    Classy Villa is not responsible for personal injury, loss, or theft during the stay.
+//             </li>
+//             <li>
+//  We reserve the right to modify these terms at any time without prior notice.
+//             </li>
+//           </ul>
+//         </div>
